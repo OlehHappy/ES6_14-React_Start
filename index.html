@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.min.js"></script>
+	<script type="text/babel">
+
+	var Restaurant = React.createClass({
+		render: function() {
+			return (<div>
+				<h1>Hello World!</h1>
+				</div>)
+		}
+	});
+
+	React.render(<Restaurant></Restaurant>, document.body);
+
+	// other way with props
+	var Props = React.createClass({
+		render: function() {
+			return (<div>
+						<h1>{this.props.name}</h1>
+					</div>)
+		}
+	});
+
+	React.render(<Props name = "Metey's Shrimp Shack"></Props>, document.body);
+
+	// ECMAScript 6 syntax
+	class Ecmascript extends React.Component {
+		render() {
+			return (<div>
+						<h1>{this.props.name}</h1>
+					</div>)
+		}
+	}
+
+	React.render(<Ecmascript name = "Metey's Shrimp Shack 3"></Ecmascript>, document.body);
+
+	</script>
+	<title>Classes</title>
+</head>
+<body>
+</body>	
+</html>
+
+
+
+
+
+
+
+
